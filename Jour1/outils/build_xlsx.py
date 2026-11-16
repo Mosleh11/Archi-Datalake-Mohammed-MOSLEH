@@ -4,9 +4,9 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill
 
 racine = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-uc1 = os.path.join(racine, "01_UC01_besoin_exploration")
-res = json.load(open(os.path.join(uc1, "preuves", "resultats_analyse.json"), encoding="utf-8"))
-schema = json.load(open(os.path.join(uc1, "preuves", "schema_spec_tpcxbb.json"), encoding="utf-8"))
+uc1 = os.path.join(racine, "UC01_preuves")
+res = json.load(open(os.path.join(uc1, "resultats_analyse.json"), encoding="utf-8"))
+schema = json.load(open(os.path.join(uc1, "schema_spec_tpcxbb.json"), encoding="utf-8"))
 
 
 def feuille(wb, titre, entetes, lignes, largeurs):

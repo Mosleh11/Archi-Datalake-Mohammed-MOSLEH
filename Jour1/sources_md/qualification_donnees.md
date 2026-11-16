@@ -1,6 +1,6 @@
 # UC-01 – Qualification des données et des relations
 
-Tout ce qui est ci-dessous a été mesuré avec `preuves/analyse_kit.py` sur les fichiers réellement reçus (résultats dans `preuves/resultats_analyse.json`). Les statuts suivent ceux du TP.
+Tout ce qui est ci-dessous a été mesuré avec `UC01_preuves/analyse_kit.py` sur les fichiers réellement reçus (résultats dans `UC01_preuves/resultats_analyse.json`). Les statuts suivent ceux du TP.
 
 ## 1. Inventaire des fichiers
 
@@ -64,7 +64,7 @@ Ce taux est proche du paramètre NULL_CHANCE de la spec (0,00025). Je le **dédu
 
 ## 5. Relations entre les tables
 
-Pour chaque relation on a vérifié : la colonne existe des deux côtés, les types sont compatibles (entiers), la clé cible est unique, on a compté les vides et les valeurs sans correspondance (`preuves/resultats_analyse.json`, rubrique jointures).
+Pour chaque relation on a vérifié : la colonne existe des deux côtés, les types sont compatibles (entiers), la clé cible est unique, on a compté les vides et les valeurs sans correspondance (`UC01_preuves/resultats_analyse.json`, rubrique jointures).
 
 | Relation | Lignes | Vides | Sans correspondance | Statut |
 |---|---|---|---|---|
@@ -85,7 +85,7 @@ Remarque sur les 243 dates : 242 jours complets (242 × 90 000 = 21 780 000) + 1
 
 ## 6. Contrôles simples réalisés
 
-(`preuves/controles_simples.txt`)
+(`UC01_preuves/controles_simples.txt`)
 
 - 22 clients sans adresse ; les 5 premiers états : TX 8 189, GA 5 081, VA 4 394, KY 3 848, KS 3 379.
 - Genre : M 961 096, F 959 218, vide 486.

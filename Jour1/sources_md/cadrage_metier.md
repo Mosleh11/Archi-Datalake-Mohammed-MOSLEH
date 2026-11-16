@@ -12,7 +12,7 @@ Notre rôle : comprendre le besoin, vérifier les données qu'on a vraiment, pui
 
 Le formateur a fourni un seul fichier de données : `retail_project.zip` (120 441 614 octets), plus le cours, le TP, le projet fil rouge et la spécification TPCx-BB v1.7.0 (lien tpc.org).
 
-**Point important : le zip est tronqué.** `unzip` répond « End-of-central-directory signature not found ». J'ai récupéré les fichiers lisibles en lisant les en-têtes un par un (`preuves/recuperation_zip.py`). On obtient 7 tables sur la vingtaine citées dans la spec et dans le projet. Les tables de ventes, de retours, `item`, `store` et la navigation web ne sont pas dedans.
+**Point important : le zip est tronqué.** `unzip` répond « End-of-central-directory signature not found ». J'ai récupéré les fichiers lisibles en lisant les en-têtes un par un (`UC01_preuves/recuperation_zip.py`). On obtient 7 tables sur la vingtaine citées dans la spec et dans le projet. Les tables de ventes, de retours, `item`, `store` et la navigation web ne sont pas dedans.
 
 | Information | Valeur | Statut |
 |---|---|---|
