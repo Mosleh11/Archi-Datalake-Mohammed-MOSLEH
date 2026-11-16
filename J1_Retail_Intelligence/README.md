@@ -5,9 +5,9 @@ Use cases traités : **UC-01** (besoin métier et exploration) et **UC-02** (arc
 
 ## Point important sur les données
 
-Le fichier `retail_project.zip` donné par le formateur est **tronqué** (pas de fin d'archive). Je n'ai pu récupérer que 7 tables : `customer`, `customer_address`, `customer_demographics`, `date_dim`, `household_demographics`, `income_band` et `inventory` (ce dernier est coupé en cours de fichier). Les tables de ventes, de retours, `item`, `store`, la navigation web, etc. ne sont pas dans le zip.
+`retail_project.zip` est **tronqué**. Seules 7 tables sont récupérables : `customer`, `customer_address`, `customer_demographics`, `date_dim`, `household_demographics`, `income_band` et `inventory` (coupée en cours de fichier). Les ventes, retours, `item`, `store`, etc. sont absents.
 
-Conséquence : l'inventaire et la qualification portent sur ces 7 tables (mesurés), et les KPI de ventes sont définis mais marqués **non calculables / non vérifié**. Les tables absentes sont listées dans `inventaire_sources.xlsx` (feuille « Absents du zip »). Rien n'a été inventé. Il faudrait redemander le zip complet au formateur.
+Les KPI de ventes sont donc définis mais **non calculables**. Tables absentes : feuille « Absents du zip » de `inventaire_sources.xlsx`.
 
 Les noms de colonnes viennent du DDL de la spec TPCx-BB v1.7.0, car les `.dat` n'ont pas d'en-tête.
 
