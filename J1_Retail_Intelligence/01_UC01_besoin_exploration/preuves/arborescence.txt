@@ -1,0 +1,15 @@
+Zip fourni : retail_project.zip (120 441 614 octets)
+unzip -l : End-of-central-directory signature not found -> archive tronquee
+Recuperation avec recuperation_zip.py (lecture des en-tetes locaux).
+
+retail_project/data/
+  customer/customer.dat       13279063 octets
+  customer_address/customer_address.dat        5387229 octets
+  customer_demographics/customer_demographics.dat       77753083 octets
+  date_dim/date_dim.dat       15395800 octets
+  household_demographics/household_demographics.dat         155100 octets
+  income_band/income_band.dat            327 octets
+  inventory/inventory.dat      398201945 octets
+
+Le dernier fichier (inventory.dat) est coupe : derniere ligne incomplete.
+Aucun autre dossier n'est present dans le zip (voir inventaire_sources.xlsx, feuille 'Absents du zip').

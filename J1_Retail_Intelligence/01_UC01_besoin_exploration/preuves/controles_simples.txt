@@ -1,0 +1,38 @@
+--- fins de ligne
+customer.dat : CRLF
+--- clients par état (customer -> customer_address)
+clients sans adresse : 22
+top 5 états : [('TX', 8189), ('GA', 5081), ('VA', 4394), ('KY', 3848), ('KS', 3379)]
+--- genre dans customer_demographics
+Counter({'M': 961096, 'F': 959218, '': 486})
+--- hd_vehicle_count (valeurs distinctes)
+Counter({'2': 2514, '3': 1596, '1': 1243, '0': 1183, '4': 380, '-1': 282, '': 2})
+--- clients par tranche de revenu (customer -> household_demographics -> income_band)
+('1', '10000') 4891
+('10001', '20000') 5047
+('20001', '30000') 5124
+('30001', '40000') 5039
+('40001', '50000') 4706
+('50001', '60000') 5009
+('60001', '70000') 5136
+('70001', '80000') 4827
+('80001', '90000') 4704
+('90001', '100000') 4660
+('100001', '110000') 4672
+('110001', '120000') 4971
+('120001', '130000') 4930
+('130001', '140000') 5447
+('140001', '150000') 5227
+('150001', '160000') 4880
+('160001', '170000') 4989
+('170001', '180000') 4941
+('180001', '190000') 4666
+('190001', '200000') 5074
+--- inventory : lignes et stock moyen par entrepôt
+lignes par date (min / max) : 11808 90000
+dates avec moins de 90000 lignes (18000 articles x 5 entrepôts) : ['38584'] [11808]
+entrepôt 0 stock moyen 500.3
+entrepôt 1 stock moyen 500.2
+entrepôt 2 stock moyen 500.1
+entrepôt 3 stock moyen 499.9
+entrepôt 4 stock moyen 500.3
