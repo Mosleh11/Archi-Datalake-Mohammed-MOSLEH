@@ -1,0 +1,8 @@
+UpdateAttribute_suivi entrees 2 sorties 2
+PutHDFS_raw_nifi entrees 2 sorties 1
+GetFile_entree entrees 0 sorties 2
+LogAttribute_echec entrees 0 sorties 0
+PutHDFS_raw_nifi -> LogAttribute_echec en file d'attente : 1
+UpdateAttribute_suivi -> PutHDFS_raw_nifi en file d'attente : 0
+GetFile_entree -> UpdateAttribute_suivi en file d'attente : 0
+2026-11-17 15:16:28,921 WARN [Timer-Driven Process Thread-5] o.apache.nifi.processors.hadoop.PutHDFS PutHDFS[id=ea13a236-01a1-1000-4289-4e0ab36f6088] penalizing , offset=0, length=155100],offset=0,name=household_demographics.dat,size=155100] and routing to failure because file with same name already exists

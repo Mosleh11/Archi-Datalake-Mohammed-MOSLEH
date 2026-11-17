@@ -1,0 +1,380 @@
+[
+ {
+  "id": "3",
+  "eventId": 3,
+  "eventTime": "11/17/2026 15:06:15.442 UTC",
+  "eventTimestamp": "2026-11-17T15:06:15.442Z",
+  "eventDuration": 8,
+  "lineageDuration": 194,
+  "eventType": "DROP",
+  "flowFileUuid": "ff18fc01-884f-4a1e-a537-285b9dc54a61",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea0b22f8-01a1-1000-f69b-18acfbbd8c1b",
+  "componentType": "PutFile",
+  "componentName": "PutFile_archive",
+  "attributes": [
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/",
+    "previousValue": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:06:13+0000",
+    "previousValue": "2026-11-17T15:06:13+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root",
+    "previousValue": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:06:15+0000",
+    "previousValue": "2026-11-17T15:06:15+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000",
+    "previousValue": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi",
+    "previousValue": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x",
+    "previousValue": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat",
+    "previousValue": "household_demographics.dat"
+   },
+   {
+    "name": "ingere_par",
+    "value": "nifi_j2",
+    "previousValue": "nifi_j2"
+   },
+   {
+    "name": "path",
+    "value": "/",
+    "previousValue": "/"
+   },
+   {
+    "name": "source",
+    "value": "tpcxbb",
+    "previousValue": "tpcxbb"
+   },
+   {
+    "name": "uuid",
+    "value": "ff18fc01-884f-4a1e-a537-285b9dc54a61",
+    "previousValue": "ff18fc01-884f-4a1e-a537-285b9dc54a61"
+   },
+   {
+    "name": "zone",
+    "value": "raw",
+    "previousValue": "raw"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "details": "Auto-Terminated by success Relationship",
+  "contentEqual": true,
+  "inputContentAvailable": true,
+  "inputContentClaimSection": "1",
+  "inputContentClaimContainer": "default",
+  "inputContentClaimIdentifier": "1794927975253-1",
+  "inputContentClaimOffset": 0,
+  "inputContentClaimFileSize": "151.46 KB",
+  "inputContentClaimFileSizeBytes": 155100,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "1",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794927975253-1",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": true,
+  "sourceConnectionIdentifier": "ea0b2480-01a1-1000-56c1-0cc0ef388530"
+ },
+ {
+  "id": "2",
+  "eventId": 2,
+  "eventTime": "11/17/2026 15:06:15.441 UTC",
+  "eventTimestamp": "2026-11-17T15:06:15.441Z",
+  "eventDuration": 5,
+  "lineageDuration": 193,
+  "eventType": "SEND",
+  "flowFileUuid": "ff18fc01-884f-4a1e-a537-285b9dc54a61",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea0b22f8-01a1-1000-f69b-18acfbbd8c1b",
+  "componentType": "PutFile",
+  "componentName": "PutFile_archive",
+  "attributes": [
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/",
+    "previousValue": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:06:13+0000",
+    "previousValue": "2026-11-17T15:06:13+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root",
+    "previousValue": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:06:15+0000",
+    "previousValue": "2026-11-17T15:06:15+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000",
+    "previousValue": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi",
+    "previousValue": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x",
+    "previousValue": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat",
+    "previousValue": "household_demographics.dat"
+   },
+   {
+    "name": "ingere_par",
+    "value": "nifi_j2",
+    "previousValue": "nifi_j2"
+   },
+   {
+    "name": "path",
+    "value": "/",
+    "previousValue": "/"
+   },
+   {
+    "name": "source",
+    "value": "tpcxbb",
+    "previousValue": "tpcxbb"
+   },
+   {
+    "name": "uuid",
+    "value": "ff18fc01-884f-4a1e-a537-285b9dc54a61",
+    "previousValue": "ff18fc01-884f-4a1e-a537-285b9dc54a61"
+   },
+   {
+    "name": "zone",
+    "value": "raw",
+    "previousValue": "raw"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "transitUri": "file:/data/nifi/archive/household_demographics.dat",
+  "contentEqual": true,
+  "inputContentAvailable": true,
+  "inputContentClaimSection": "1",
+  "inputContentClaimContainer": "default",
+  "inputContentClaimIdentifier": "1794927975253-1",
+  "inputContentClaimOffset": 0,
+  "inputContentClaimFileSize": "151.46 KB",
+  "inputContentClaimFileSizeBytes": 155100,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "1",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794927975253-1",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": true,
+  "sourceConnectionIdentifier": "ea0b2480-01a1-1000-56c1-0cc0ef388530"
+ },
+ {
+  "id": "1",
+  "eventId": 1,
+  "eventTime": "11/17/2026 15:06:15.419 UTC",
+  "eventTimestamp": "2026-11-17T15:06:15.419Z",
+  "eventDuration": 14,
+  "lineageDuration": 171,
+  "eventType": "ATTRIBUTES_MODIFIED",
+  "flowFileUuid": "ff18fc01-884f-4a1e-a537-285b9dc54a61",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea0b2235-01a1-1000-8cb3-b1a4f076465b",
+  "componentType": "UpdateAttribute",
+  "componentName": "UpdateAttribute_suivi",
+  "attributes": [
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/",
+    "previousValue": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:06:13+0000",
+    "previousValue": "2026-11-17T15:06:13+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root",
+    "previousValue": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:06:15+0000",
+    "previousValue": "2026-11-17T15:06:15+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000",
+    "previousValue": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi",
+    "previousValue": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x",
+    "previousValue": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat",
+    "previousValue": "household_demographics.dat"
+   },
+   {
+    "name": "ingere_par",
+    "value": "nifi_j2"
+   },
+   {
+    "name": "path",
+    "value": "/",
+    "previousValue": "/"
+   },
+   {
+    "name": "source",
+    "value": "tpcxbb"
+   },
+   {
+    "name": "uuid",
+    "value": "ff18fc01-884f-4a1e-a537-285b9dc54a61",
+    "previousValue": "ff18fc01-884f-4a1e-a537-285b9dc54a61"
+   },
+   {
+    "name": "zone",
+    "value": "raw"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "contentEqual": true,
+  "inputContentAvailable": true,
+  "inputContentClaimSection": "1",
+  "inputContentClaimContainer": "default",
+  "inputContentClaimIdentifier": "1794927975253-1",
+  "inputContentClaimOffset": 0,
+  "inputContentClaimFileSize": "151.46 KB",
+  "inputContentClaimFileSizeBytes": 155100,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "1",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794927975253-1",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": true,
+  "sourceConnectionIdentifier": "ea0b23ea-01a1-1000-acf8-a27ebd0b4fda"
+ },
+ {
+  "id": "0",
+  "eventId": 0,
+  "eventTime": "11/17/2026 15:06:15.281 UTC",
+  "eventTimestamp": "2026-11-17T15:06:15.281Z",
+  "eventDuration": 9,
+  "lineageDuration": 33,
+  "eventType": "RECEIVE",
+  "flowFileUuid": "ff18fc01-884f-4a1e-a537-285b9dc54a61",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea0b2066-01a1-1000-9bd4-d239a07e13b0",
+  "componentType": "GetFile",
+  "componentName": "GetFile_entree",
+  "attributes": [
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:06:13+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:06:15+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat"
+   },
+   {
+    "name": "path",
+    "value": "/"
+   },
+   {
+    "name": "uuid",
+    "value": "ff18fc01-884f-4a1e-a537-285b9dc54a61"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "transitUri": "file:/data/nifi/input/household_demographics.dat",
+  "contentEqual": false,
+  "inputContentAvailable": false,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "1",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794927975253-1",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": false,
+  "replayExplanation": "Cannot replay data from Provenance Event because the Source FlowFile Queue with ID No Value no longer exists",
+  "sourceConnectionIdentifier": "No Value"
+ }
+]

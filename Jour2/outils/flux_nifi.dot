@@ -1,0 +1,7 @@
+digraph F { rankdir=LR; node [shape=box, fontname=Arial, style="rounded,filled", fillcolor="#eef3fb"]; edge [fontname=Arial, fontsize=10];
+src [label="Dossier local\n/data/nifi/input", shape=folder, fillcolor="#fff2cc"];
+get [label="GetFile_entree\nGetFile\nKeep Source File = false"]; upd [label="UpdateAttribute_suivi\nsource, zone, ingere_par"];
+put [label="PutHDFS_raw_nifi\nDirectory /retail-lake/raw/nifi\nConflict = fail"]; log [label="LogAttribute_echec\nLogAttribute", fillcolor="#f4cccc"];
+hdfs [label="HDFS\n/retail-lake/raw/nifi", shape=cylinder, fillcolor="#d9ead3"];
+src -> get; get -> upd [label="success"]; upd -> put [label="success"]; put -> hdfs [label="écrit"]; put -> log [label="failure", color="#cc0000", fontcolor="#cc0000"];
+}

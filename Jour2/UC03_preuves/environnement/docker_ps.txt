@@ -1,0 +1,4 @@
+NAMES         IMAGE                   STATUS                       PORTS
+j2-nifi       apache/nifi:2.12.0      Up 56 minutes                0.0.0.0:8443->8443/tcp, [::]:8443->8443/tcp
+j2-datanode   apache/hadoop:3.5.0     Up 56 minutes                
+j2-namenode   apache/hadoop:3.5.0     Up 56 minutes                0.0.0.0:9870->9870/tcp, [::]:9870->9870/tcp

@@ -1,0 +1,518 @@
+[
+ {
+  "id": "8",
+  "eventId": 8,
+  "eventTime": "11/17/2026 15:15:27.750 UTC",
+  "eventTimestamp": "2026-11-17T15:15:27.750Z",
+  "eventDuration": 652,
+  "lineageDuration": 2109,
+  "eventType": "DROP",
+  "flowFileUuid": "21f997b2-1490-41bb-92c6-65746af2ea15",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea13a236-01a1-1000-4289-4e0ab36f6088",
+  "componentType": "PutHDFS",
+  "componentName": "PutHDFS_raw_nifi",
+  "attributes": [
+   {
+    "name": "absolute.hdfs.path",
+    "value": "/retail-lake/raw/nifi"
+   },
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/",
+    "previousValue": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:15:24+0000",
+    "previousValue": "2026-11-17T15:15:24+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root",
+    "previousValue": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:15:25+0000",
+    "previousValue": "2026-11-17T15:15:25+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000",
+    "previousValue": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi",
+    "previousValue": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x",
+    "previousValue": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat",
+    "previousValue": "household_demographics.dat"
+   },
+   {
+    "name": "hadoop.file.url",
+    "value": "hdfs://namenode:8020/retail-lake/raw/nifi/household_demographics.dat"
+   },
+   {
+    "name": "ingere_par",
+    "value": "nifi_j2",
+    "previousValue": "nifi_j2"
+   },
+   {
+    "name": "path",
+    "value": "/",
+    "previousValue": "/"
+   },
+   {
+    "name": "source",
+    "value": "tpcxbb",
+    "previousValue": "tpcxbb"
+   },
+   {
+    "name": "target.dir.created",
+    "value": "false"
+   },
+   {
+    "name": "uuid",
+    "value": "21f997b2-1490-41bb-92c6-65746af2ea15",
+    "previousValue": "21f997b2-1490-41bb-92c6-65746af2ea15"
+   },
+   {
+    "name": "zone",
+    "value": "raw",
+    "previousValue": "raw"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "details": "Auto-Terminated by success Relationship",
+  "contentEqual": true,
+  "inputContentAvailable": true,
+  "inputContentClaimSection": "2",
+  "inputContentClaimContainer": "default",
+  "inputContentClaimIdentifier": "1794928525642-2",
+  "inputContentClaimOffset": 0,
+  "inputContentClaimFileSize": "151.46 KB",
+  "inputContentClaimFileSizeBytes": 155100,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "2",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794928525642-2",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": true,
+  "sourceConnectionIdentifier": "ea13a5ba-01a1-1000-de94-92f6f0e2cf7d"
+ },
+ {
+  "id": "7",
+  "eventId": 7,
+  "eventTime": "11/17/2026 15:15:27.751 UTC",
+  "eventTimestamp": "2026-11-17T15:15:27.751Z",
+  "eventDuration": 652,
+  "lineageDuration": 2110,
+  "eventType": "ATTRIBUTES_MODIFIED",
+  "flowFileUuid": "21f997b2-1490-41bb-92c6-65746af2ea15",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea13a236-01a1-1000-4289-4e0ab36f6088",
+  "componentType": "PutHDFS",
+  "componentName": "PutHDFS_raw_nifi",
+  "attributes": [
+   {
+    "name": "absolute.hdfs.path",
+    "value": "/retail-lake/raw/nifi"
+   },
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/",
+    "previousValue": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:15:24+0000",
+    "previousValue": "2026-11-17T15:15:24+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root",
+    "previousValue": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:15:25+0000",
+    "previousValue": "2026-11-17T15:15:25+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000",
+    "previousValue": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi",
+    "previousValue": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x",
+    "previousValue": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat",
+    "previousValue": "household_demographics.dat"
+   },
+   {
+    "name": "hadoop.file.url",
+    "value": "hdfs://namenode:8020/retail-lake/raw/nifi/household_demographics.dat"
+   },
+   {
+    "name": "ingere_par",
+    "value": "nifi_j2",
+    "previousValue": "nifi_j2"
+   },
+   {
+    "name": "path",
+    "value": "/",
+    "previousValue": "/"
+   },
+   {
+    "name": "source",
+    "value": "tpcxbb",
+    "previousValue": "tpcxbb"
+   },
+   {
+    "name": "target.dir.created",
+    "value": "false"
+   },
+   {
+    "name": "uuid",
+    "value": "21f997b2-1490-41bb-92c6-65746af2ea15",
+    "previousValue": "21f997b2-1490-41bb-92c6-65746af2ea15"
+   },
+   {
+    "name": "zone",
+    "value": "raw",
+    "previousValue": "raw"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "contentEqual": true,
+  "inputContentAvailable": true,
+  "inputContentClaimSection": "2",
+  "inputContentClaimContainer": "default",
+  "inputContentClaimIdentifier": "1794928525642-2",
+  "inputContentClaimOffset": 0,
+  "inputContentClaimFileSize": "151.46 KB",
+  "inputContentClaimFileSizeBytes": 155100,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "2",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794928525642-2",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": true,
+  "sourceConnectionIdentifier": "ea13a5ba-01a1-1000-de94-92f6f0e2cf7d"
+ },
+ {
+  "id": "6",
+  "eventId": 6,
+  "eventTime": "11/17/2026 15:15:27.748 UTC",
+  "eventTimestamp": "2026-11-17T15:15:27.748Z",
+  "eventDuration": 650,
+  "lineageDuration": 2107,
+  "eventType": "SEND",
+  "flowFileUuid": "21f997b2-1490-41bb-92c6-65746af2ea15",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea13a236-01a1-1000-4289-4e0ab36f6088",
+  "componentType": "PutHDFS",
+  "componentName": "PutHDFS_raw_nifi",
+  "attributes": [
+   {
+    "name": "absolute.hdfs.path",
+    "value": "/retail-lake/raw/nifi"
+   },
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/",
+    "previousValue": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:15:24+0000",
+    "previousValue": "2026-11-17T15:15:24+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root",
+    "previousValue": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:15:25+0000",
+    "previousValue": "2026-11-17T15:15:25+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000",
+    "previousValue": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi",
+    "previousValue": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x",
+    "previousValue": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat",
+    "previousValue": "household_demographics.dat"
+   },
+   {
+    "name": "hadoop.file.url",
+    "value": "hdfs://namenode:8020/retail-lake/raw/nifi/household_demographics.dat"
+   },
+   {
+    "name": "ingere_par",
+    "value": "nifi_j2",
+    "previousValue": "nifi_j2"
+   },
+   {
+    "name": "path",
+    "value": "/",
+    "previousValue": "/"
+   },
+   {
+    "name": "source",
+    "value": "tpcxbb",
+    "previousValue": "tpcxbb"
+   },
+   {
+    "name": "target.dir.created",
+    "value": "false"
+   },
+   {
+    "name": "uuid",
+    "value": "21f997b2-1490-41bb-92c6-65746af2ea15",
+    "previousValue": "21f997b2-1490-41bb-92c6-65746af2ea15"
+   },
+   {
+    "name": "zone",
+    "value": "raw",
+    "previousValue": "raw"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "transitUri": "hdfs://namenode:8020/retail-lake/raw/nifi/household_demographics.dat",
+  "contentEqual": true,
+  "inputContentAvailable": true,
+  "inputContentClaimSection": "2",
+  "inputContentClaimContainer": "default",
+  "inputContentClaimIdentifier": "1794928525642-2",
+  "inputContentClaimOffset": 0,
+  "inputContentClaimFileSize": "151.46 KB",
+  "inputContentClaimFileSizeBytes": 155100,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "2",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794928525642-2",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": true,
+  "sourceConnectionIdentifier": "ea13a5ba-01a1-1000-de94-92f6f0e2cf7d"
+ },
+ {
+  "id": "5",
+  "eventId": 5,
+  "eventTime": "11/17/2026 15:15:25.669 UTC",
+  "eventTimestamp": "2026-11-17T15:15:25.669Z",
+  "eventDuration": 6,
+  "lineageDuration": 28,
+  "eventType": "ATTRIBUTES_MODIFIED",
+  "flowFileUuid": "21f997b2-1490-41bb-92c6-65746af2ea15",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea13a215-01a1-1000-f4b4-6f0cf15db3fa",
+  "componentType": "UpdateAttribute",
+  "componentName": "UpdateAttribute_suivi",
+  "attributes": [
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/",
+    "previousValue": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:15:24+0000",
+    "previousValue": "2026-11-17T15:15:24+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root",
+    "previousValue": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:15:25+0000",
+    "previousValue": "2026-11-17T15:15:25+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000",
+    "previousValue": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi",
+    "previousValue": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x",
+    "previousValue": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat",
+    "previousValue": "household_demographics.dat"
+   },
+   {
+    "name": "ingere_par",
+    "value": "nifi_j2"
+   },
+   {
+    "name": "path",
+    "value": "/",
+    "previousValue": "/"
+   },
+   {
+    "name": "source",
+    "value": "tpcxbb"
+   },
+   {
+    "name": "uuid",
+    "value": "21f997b2-1490-41bb-92c6-65746af2ea15",
+    "previousValue": "21f997b2-1490-41bb-92c6-65746af2ea15"
+   },
+   {
+    "name": "zone",
+    "value": "raw"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "contentEqual": true,
+  "inputContentAvailable": true,
+  "inputContentClaimSection": "2",
+  "inputContentClaimContainer": "default",
+  "inputContentClaimIdentifier": "1794928525642-2",
+  "inputContentClaimOffset": 0,
+  "inputContentClaimFileSize": "151.46 KB",
+  "inputContentClaimFileSizeBytes": 155100,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "2",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794928525642-2",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": true,
+  "sourceConnectionIdentifier": "ea13a591-01a1-1000-193c-18b11b8af170"
+ },
+ {
+  "id": "4",
+  "eventId": 4,
+  "eventTime": "11/17/2026 15:15:25.646 UTC",
+  "eventTimestamp": "2026-11-17T15:15:25.646Z",
+  "eventDuration": 2,
+  "lineageDuration": 5,
+  "eventType": "RECEIVE",
+  "flowFileUuid": "21f997b2-1490-41bb-92c6-65746af2ea15",
+  "fileSize": "151.46 KB",
+  "fileSizeBytes": 155100,
+  "groupId": "e9edc212-01a1-1000-4dee-2d6c80aaf2e6",
+  "componentId": "ea13a1e9-01a1-1000-c1af-0bf01112aefb",
+  "componentType": "GetFile",
+  "componentName": "GetFile_entree",
+  "attributes": [
+   {
+    "name": "absolute.path",
+    "value": "/data/nifi/input/"
+   },
+   {
+    "name": "file.creationTime",
+    "value": "2026-11-17T15:15:24+0000"
+   },
+   {
+    "name": "file.group",
+    "value": "root"
+   },
+   {
+    "name": "file.lastAccessTime",
+    "value": "2026-11-17T15:15:25+0000"
+   },
+   {
+    "name": "file.lastModifiedTime",
+    "value": "2026-11-16T12:33:33+0000"
+   },
+   {
+    "name": "file.owner",
+    "value": "nifi"
+   },
+   {
+    "name": "file.permissions",
+    "value": "rwxr-xr-x"
+   },
+   {
+    "name": "filename",
+    "value": "household_demographics.dat"
+   },
+   {
+    "name": "path",
+    "value": "/"
+   },
+   {
+    "name": "uuid",
+    "value": "21f997b2-1490-41bb-92c6-65746af2ea15"
+   }
+  ],
+  "parentUuids": [],
+  "childUuids": [],
+  "transitUri": "file:/data/nifi/input/household_demographics.dat",
+  "contentEqual": false,
+  "inputContentAvailable": false,
+  "outputContentAvailable": true,
+  "outputContentClaimSection": "2",
+  "outputContentClaimContainer": "default",
+  "outputContentClaimIdentifier": "1794928525642-2",
+  "outputContentClaimOffset": 0,
+  "outputContentClaimFileSize": "151.46 KB",
+  "outputContentClaimFileSizeBytes": 155100,
+  "replayAvailable": false,
+  "replayExplanation": "Cannot replay data from Provenance Event because the Source FlowFile Queue with ID No Value no longer exists",
+  "sourceConnectionIdentifier": "No Value"
+ }
+]

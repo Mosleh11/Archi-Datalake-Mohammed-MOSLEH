@@ -1,0 +1,57 @@
+[2026-11-17 15:34:57] j2-namenode $ hdfs dfs -ls /
+Found 1 items
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake
+-> code retour 0
+
+[2026-11-17 15:34:59] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/raw/tpcxbb/initial
+-> code retour 0
+
+[2026-11-17 15:35:01] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/raw/tpcxbb/refresh
+-> code retour 0
+
+[2026-11-17 15:35:03] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/raw/nifi
+-> code retour 0
+
+[2026-11-17 15:35:05] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/bronze/tpcxbb
+-> code retour 0
+
+[2026-11-17 15:35:07] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/silver
+-> code retour 0
+
+[2026-11-17 15:35:09] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/gold
+-> code retour 0
+
+[2026-11-17 15:35:11] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/quality
+-> code retour 0
+
+[2026-11-17 15:35:13] j2-namenode $ hdfs dfs -mkdir -p /retail-lake/logs
+-> code retour 0
+
+[2026-11-17 15:35:15] j2-namenode $ hdfs dfs -ls -R /retail-lake
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/bronze
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/bronze/tpcxbb
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/gold
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/logs
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/quality
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/raw
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/raw/nifi
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/raw/tpcxbb
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/raw/tpcxbb/initial
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/raw/tpcxbb/refresh
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/silver
+-> code retour 0
+
+[2026-11-17 15:35:16] j2-namenode $ hdfs dfs -du -h /retail-lake
+0  0  /retail-lake/bronze
+0  0  /retail-lake/gold
+0  0  /retail-lake/logs
+0  0  /retail-lake/quality
+0  0  /retail-lake/raw
+0  0  /retail-lake/silver
+-> code retour 0
+
+[2026-11-17 15:35:19] j2-namenode $ hdfs dfs -ls -d /retail-lake /retail-lake/raw
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 14:34 /retail-lake/raw
+-> code retour 0
+

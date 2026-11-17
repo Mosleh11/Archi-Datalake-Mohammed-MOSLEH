@@ -1,0 +1,12 @@
+[2026-11-17 16:17:54] verification du depot fait par NiFi (PutHDFS)
+Found 1 items
+-rw-r--r--   1 hadoop supergroup    151.5 K 2026-11-17 15:15 /retail-lake/raw/nifi/household_demographics.dat
+155100  155100  /retail-lake/raw/nifi/household_demographics.dat
+915aa15ea23e2beee3fa13bee3a94ae8ed5b0d170ea97e25ff81f79417fdfaf7  -
+Connecting to namenode via http://namenode:9870/fsck?ugi=hadoop&files=1&path=%2Fretail-lake%2Fraw%2Fnifi
+FSCK started by hadoop (auth:SIMPLE) from /172.20.0.2 for path /retail-lake/raw/nifi at Tue Nov 17 15:18:01 UTC 2026
+
+/retail-lake/raw/nifi <dir>
+/retail-lake/raw/nifi/household_demographics.dat 155100 bytes, replicated: replication=1, 1 block(s):  OK
+
+source locale : 915aa15ea23e2beee3fa13bee3a94ae8ed5b0d170ea97e25ff81f79417fdfaf7

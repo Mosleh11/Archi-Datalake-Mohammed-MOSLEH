@@ -1,0 +1,117 @@
+[2026-11-17 15:35:20] j2-namenode $ ls -l /data/tpcxbb/household_demographics.dat; wc -l < /data/tpcxbb/household_demographics.dat; head -n 2 /data/tpcxbb/household_demographics.dat; awk -F'|' 'NR==1{print NF" colonnes"}' /data/tpcxbb/household_demographics.dat; sha256sum /data/tpcxbb/household_demographics.dat
+-rwxr-xr-x 1 hadoop root 155100 Nov 16 12:33 /data/tpcxbb/household_demographics.dat
+7200
+0|3|1001-5000|0|0
+1|12|5001-10000|1|2
+5 colonnes
+915aa15ea23e2beee3fa13bee3a94ae8ed5b0d170ea97e25ff81f79417fdfaf7  /data/tpcxbb/household_demographics.dat
+-> code retour 0
+
+[2026-11-17 15:35:21] j2-namenode $ hdfs dfs -put -f /data/tpcxbb/household_demographics.dat /retail-lake/raw/tpcxbb/initial/
+-> code retour 0
+
+[2026-11-17 15:35:24] j2-namenode $ ls -l /data/tpcxbb/date_dim.dat; wc -l < /data/tpcxbb/date_dim.dat; head -n 2 /data/tpcxbb/date_dim.dat; awk -F'|' 'NR==1{print NF" colonnes"}' /data/tpcxbb/date_dim.dat; sha256sum /data/tpcxbb/date_dim.dat
+-rwxr-xr-x 1 hadoop root 15395800 Nov 16 12:33 /data/tpcxbb/date_dim.dat
+109573
+0|AAAAAAAAAAAAAAAA|1900-01-01|0|0|0|1900|1|1|1|1|1900|0|0|Monday|1900Q1|Y|N|N|2448812|2458802|2472542|2420941|N|N|N|N|N
+1|AAAAAAAAAAAAAAAB|1900-01-02|0|0|0|1900|2|1|2|1|1900|0|0|Tuesday|1900Q1|Y|N|N|2441612|2427135|2449909|2430434|N|N|N|N|N
+28 colonnes
+325c892265c040d6c85491d708e4e081d1bf8532f949b3a18b14ba6e73a456af  /data/tpcxbb/date_dim.dat
+-> code retour 0
+
+[2026-11-17 15:35:24] j2-namenode $ hdfs dfs -put -f /data/tpcxbb/date_dim.dat /retail-lake/raw/tpcxbb/initial/
+-> code retour 0
+
+[2026-11-17 15:35:26] j2-namenode $ hdfs dfs -ls -h /retail-lake/raw/tpcxbb/initial
+Found 2 items
+-rw-r--r--   1 hadoop supergroup     14.7 M 2026-11-17 14:35 /retail-lake/raw/tpcxbb/initial/date_dim.dat
+-rw-r--r--   1 hadoop supergroup    151.5 K 2026-11-17 14:35 /retail-lake/raw/tpcxbb/initial/household_demographics.dat
+-> code retour 0
+
+[2026-11-17 15:35:28] j2-namenode $ hdfs dfs -du -h /retail-lake/raw/tpcxbb/initial
+14.7 M   14.7 M   /retail-lake/raw/tpcxbb/initial/date_dim.dat
+151.5 K  151.5 K  /retail-lake/raw/tpcxbb/initial/household_demographics.dat
+-> code retour 0
+
+[2026-11-17 15:35:30] j2-namenode $ hdfs dfs -stat '%n %b octets, replication %r, bloc %o, modifie %y' /retail-lake/raw/tpcxbb/initial/*
+date_dim.dat 15395800 octets, replication 1, bloc 134217728, modifie 2026-11-17 14:35:26
+household_demographics.dat 155100 octets, replication 1, bloc 134217728, modifie 2026-11-17 14:35:23
+-> code retour 0
+
+[2026-11-17 15:35:32] j2-namenode $ hdfs dfs -cat /retail-lake/raw/tpcxbb/initial/household_demographics.dat | head -n 3
+0|3|1001-5000|0|0
+1|12|5001-10000|1|2
+2|9|0-500|2|3
+cat: Unable to write to output stream.
+-> code retour 0
+
+[2026-11-17 15:35:34] j2-namenode $ hdfs fsck /retail-lake/raw/tpcxbb/initial -files -blocks -locations
+Connecting to namenode via http://namenode:9870/fsck?ugi=hadoop&files=1&blocks=1&locations=1&path=%2Fretail-lake%2Fraw%2Ftpcxbb%2Finitial
+FSCK started by hadoop (auth:SIMPLE) from /172.20.0.2 for path /retail-lake/raw/tpcxbb/initial at Tue Nov 17 14:35:36 UTC 2026
+
+/retail-lake/raw/tpcxbb/initial <dir>
+/retail-lake/raw/tpcxbb/initial/date_dim.dat 15395800 bytes, replicated: replication=1, 1 block(s):  OK
+0. BP-1465999088-172.20.0.2-1794926001641:blk_1073741826_1002 len=15395800 Live_repl=1  [DatanodeInfoWithStorage[172.20.0.3:9866,DS-8c3f99ba-6e6f-49a0-8a90-bb187d3efadc,DISK]]
+
+/retail-lake/raw/tpcxbb/initial/household_demographics.dat 155100 bytes, replicated: replication=1, 1 block(s):  OK
+0. BP-1465999088-172.20.0.2-1794926001641:blk_1073741825_1001 len=155100 Live_repl=1  [DatanodeInfoWithStorage[172.20.0.3:9866,DS-8c3f99ba-6e6f-49a0-8a90-bb187d3efadc,DISK]]
+
+
+Status: HEALTHY
+ Number of data-nodes:	1
+ Number of racks:		1
+ Total dirs:			1
+ Total symlinks:		0
+
+Replicated Blocks:
+ Total size:	15550900 B
+ Total files:	2
+ Total blocks (validated):	2 (avg. block size 7775450 B)
+ Minimally replicated blocks:	2 (100.0 %)
+ Over-replicated blocks:	0 (0.0 %)
+ Under-replicated blocks:	0 (0.0 %)
+ Mis-replicated blocks:		0 (0.0 %)
+ Default replication factor:	1
+ Average block replication:	1.0
+ Missing blocks:		0
+ Corrupt blocks:		0
+ Missing replicas:		0 (0.0 %)
+ Blocks queued for replication:	0
+
+Erasure Coded Block Groups:
+ Total size:	0 B
+ Total files:	0
+ Total block groups (validated):	0
+ Minimally erasure-coded block groups:	0
+ Over-erasure-coded block groups:	0
+ Under-erasure-coded block groups:	0
+ Unsatisfactory placement block groups:	0
+ Average block group size:	0.0
+ Missing block groups:		0
+ Corrupt block groups:		0
+ Missing internal blocks:	0
+ Blocks queued for replication:	0
+FSCK ended at Tue Nov 17 14:35:36 UTC 2026 in 65 milliseconds
+
+
+The filesystem under path '/retail-lake/raw/tpcxbb/initial' is HEALTHY
+-> code retour 0
+
+[2026-11-17 15:35:37] j2-namenode $ rm -f /tmp/household_demographics.verif; hdfs dfs -get /retail-lake/raw/tpcxbb/initial/household_demographics.dat /tmp/household_demographics.verif && sha256sum /tmp/household_demographics.verif /data/tpcxbb/household_demographics.dat && cmp /tmp/household_demographics.verif /data/tpcxbb/household_demographics.dat && echo IDENTIQUE
+915aa15ea23e2beee3fa13bee3a94ae8ed5b0d170ea97e25ff81f79417fdfaf7  /tmp/household_demographics.verif
+915aa15ea23e2beee3fa13bee3a94ae8ed5b0d170ea97e25ff81f79417fdfaf7  /data/tpcxbb/household_demographics.dat
+IDENTIQUE
+-> code retour 0
+
+[2026-11-17 15:35:39] j2-namenode $ rm -f /tmp/date_dim.verif; hdfs dfs -get /retail-lake/raw/tpcxbb/initial/date_dim.dat /tmp/date_dim.verif && sha256sum /tmp/date_dim.verif /data/tpcxbb/date_dim.dat && cmp /tmp/date_dim.verif /data/tpcxbb/date_dim.dat && echo IDENTIQUE
+325c892265c040d6c85491d708e4e081d1bf8532f949b3a18b14ba6e73a456af  /tmp/date_dim.verif
+325c892265c040d6c85491d708e4e081d1bf8532f949b3a18b14ba6e73a456af  /data/tpcxbb/date_dim.dat
+IDENTIQUE
+-> code retour 0
+
+[2026-11-17 15:35:41] j2-namenode $ ls -l /data/tpcxbb
+total 15188
+-rwxr-xr-x 1 hadoop root 15395800 Nov 16 12:33 date_dim.dat
+-rwxr-xr-x 1 hadoop root   155100 Nov 16 12:33 household_demographics.dat
+-> code retour 0
+

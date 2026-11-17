@@ -1,0 +1,7 @@
+digraph G { rankdir=LR; node [shape=box, fontname=Arial, style=filled, fillcolor="#eef3fb"]; edge [color="#555555"];
+"/retail-lake" [fillcolor="#dce6f5"];
+"/retail-lake" -> raw; "/retail-lake" -> bronze; "/retail-lake" -> silver; "/retail-lake" -> gold; "/retail-lake" -> quality; "/retail-lake" -> logs;
+raw -> "raw/tpcxbb"; "raw/tpcxbb" -> initial; "raw/tpcxbb" -> refresh; raw -> "raw/nifi"; bronze -> "bronze/tpcxbb";
+initial [label="initial\n2 fichiers (UC-03)", fillcolor="#d9ead3"]; "raw/nifi" [label="nifi\nfichiers du flux (UC-04)", fillcolor="#d9ead3"];
+refresh [label="refresh\n(vide)"]; "bronze/tpcxbb" [label="tpcxbb\n(vide)"]; silver [label="silver\n(vide)"]; gold [label="gold\n(vide)"]; quality [label="quality\n(vide)"]; logs [label="logs\n(vide)"];
+}

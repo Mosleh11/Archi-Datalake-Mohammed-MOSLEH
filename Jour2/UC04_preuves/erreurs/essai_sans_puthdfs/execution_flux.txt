@@ -1,0 +1,8 @@
+PutFile_archive Running in 1 out 0 octets lus 155100 ecrits 0
+GetFile_entree Running in 0 out 1 octets lus 155100 ecrits 155100
+UpdateAttribute_suivi Running in 1 out 1 octets lus 0 ecrits 0
+LogAttribute_echec Stopped in 0 out 0 octets lus 0 ecrits 0
+0 11/17/2026 15:06:15.281 UTC RECEIVE GetFile_entree ff18fc01-884f-4a1e-a537-285b9dc54a61 151.46 KB
+1 11/17/2026 15:06:15.419 UTC ATTRIBUTES_MODIFIED UpdateAttribute_suivi ff18fc01-884f-4a1e-a537-285b9dc54a61 151.46 KB
+2 11/17/2026 15:06:15.441 UTC SEND PutFile_archive ff18fc01-884f-4a1e-a537-285b9dc54a61 151.46 KB
+3 11/17/2026 15:06:15.442 UTC DROP PutFile_archive ff18fc01-884f-4a1e-a537-285b9dc54a61 151.46 KB

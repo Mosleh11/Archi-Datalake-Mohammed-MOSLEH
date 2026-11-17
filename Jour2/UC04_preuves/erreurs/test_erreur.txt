@@ -1,0 +1,2 @@
+Input Directory = /data/nifi/inexistant | validation : INVALID ["'Input Directory' validated against '/data/nifi/inexistant' is invalid because Directory does not exist"]
+Input Directory = /data/nifi/input | validation : VALID []
