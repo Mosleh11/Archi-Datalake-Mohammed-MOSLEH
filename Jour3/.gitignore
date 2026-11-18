@@ -1,0 +1,6 @@
+# Donnees volumineuses regenerables (voir README)
+data/silver/inventory/
+data/parquet/csv/
+data/parquet/json/
+data/_test/
+*.crc

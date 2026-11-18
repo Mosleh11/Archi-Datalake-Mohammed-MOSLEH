@@ -1,0 +1,249 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+
+########## SILVER ##########
+
+== silver/clients_enrichis : 99000 lignes, 25 colonnes, 3 fichier(s) Parquet, 5322881 octets
+root
+ |-- c_customer_sk: long (nullable = true)
+ |-- c_customer_id: string (nullable = true)
+ |-- c_current_cdemo_sk: long (nullable = true)
+ |-- c_current_hdemo_sk: long (nullable = true)
+ |-- c_current_addr_sk: long (nullable = true)
+ |-- c_first_shipto_date_sk: long (nullable = true)
+ |-- c_first_sales_date_sk: long (nullable = true)
+ |-- c_salutation: string (nullable = true)
+ |-- c_preferred_cust_flag: string (nullable = true)
+ |-- c_birth_year: integer (nullable = true)
+ |-- c_birth_country: string (nullable = true)
+ |-- c_last_review_date: string (nullable = true)
+ |-- email_domaine: string (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+ |-- ca_city: string (nullable = true)
+ |-- ca_county: string (nullable = true)
+ |-- ca_state: string (nullable = true)
+ |-- ca_zip: string (nullable = true)
+ |-- ca_country: string (nullable = true)
+ |-- hd_income_band_sk: long (nullable = true)
+ |-- hd_buy_potential: string (nullable = true)
+ |-- hd_dep_count: integer (nullable = true)
+ |-- hd_vehicle_count: integer (nullable = true)
+ |-- tranche: string (nullable = true)
+
++-------------+----------------+------------------+------------------+-----------------+----------------------+---------------------+------------+---------------------+------------+---------------+------------------+-------------+------------+--------------------------+-----------+------------+--------+------+-------------+-----------------+----------------+------------+----------------+-------------+
+|c_customer_sk|c_customer_id   |c_current_cdemo_sk|c_current_hdemo_sk|c_current_addr_sk|c_first_shipto_date_sk|c_first_sales_date_sk|c_salutation|c_preferred_cust_flag|c_birth_year|c_birth_country|c_last_review_date|email_domaine|_source     |_traite_le                |ca_city    |ca_county   |ca_state|ca_zip|ca_country   |hd_income_band_sk|hd_buy_potential|hd_dep_count|hd_vehicle_count|tranche      |
++-------------+----------------+------------------+------------------+-----------------+----------------------+---------------------+------------+---------------------+------------+---------------+------------------+-------------+------------+--------------------------+-----------+------------+--------+------+-------------+-----------------+----------------+------------+----------------+-------------+
+|2            |AAAAAAAAAAAAAAAC|335540            |5527              |14091            |31783                 |106195               |Miss        |Y                    |1952        |GREENLAND      |vDVbSOCI          |lawyer.com   |customer.dat|2026-11-18 14:19:39.239737|Newport    |Holt County |NE      |74641 |United States|3                |5001-10000      |1           |2               |30001-40000  |
+|9            |AAAAAAAAAAAAAAAJ|555297            |5958              |30815            |43531                 |50147                |Mr.         |Y                    |1976        |GEORGIA        |vgudeV            |mail.com     |customer.dat|2026-11-18 14:19:39.239737|Melrose    |Lyon County |IA      |74052 |United States|10               |1001-5000       |3           |3               |100001-110000|
+|11           |AAAAAAAAAAAAAAAL|1438986           |1495              |761              |91923                 |70592                |Sir         |N                    |1963        |NIGER          |bmZgmTmXHY        |ip6.li       |customer.dat|2026-11-18 14:19:39.239737|Meadowbrook|Brown County|NE      |24696 |United States|4                |1001-5000       |1           |0               |40001-50000  |
++-------------+----------------+------------------+------------------+-----------------+----------------------+---------------------+------------+---------------------+------------+---------------+------------------+-------------+------------+--------------------------+-----------+------------+--------+------+-------------+-----------------+----------------+------------+----------------+-------------+
+only showing top 3 rows
+
+== silver/customer : 99000 lignes, 15 colonnes, 6 fichier(s) Parquet, 4208962 octets
+root
+ |-- c_customer_sk: long (nullable = true)
+ |-- c_customer_id: string (nullable = true)
+ |-- c_current_cdemo_sk: long (nullable = true)
+ |-- c_current_hdemo_sk: long (nullable = true)
+ |-- c_current_addr_sk: long (nullable = true)
+ |-- c_first_shipto_date_sk: long (nullable = true)
+ |-- c_first_sales_date_sk: long (nullable = true)
+ |-- c_salutation: string (nullable = true)
+ |-- c_preferred_cust_flag: string (nullable = true)
+ |-- c_birth_year: integer (nullable = true)
+ |-- c_birth_country: string (nullable = true)
+ |-- c_last_review_date: string (nullable = true)
+ |-- email_domaine: string (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+
++-------------+----------------+------------------+------------------+-----------------+----------------------+---------------------+------------+---------------------+------------+---------------+------------------+-------------+------------+--------------------------+
+|c_customer_sk|c_customer_id   |c_current_cdemo_sk|c_current_hdemo_sk|c_current_addr_sk|c_first_shipto_date_sk|c_first_sales_date_sk|c_salutation|c_preferred_cust_flag|c_birth_year|c_birth_country|c_last_review_date|email_domaine|_source     |_traite_le                |
++-------------+----------------+------------------+------------------+-----------------+----------------------+---------------------+------------+---------------------+------------+---------------+------------------+-------------+------------+--------------------------+
+|2            |AAAAAAAAAAAAAAAC|335540            |5527              |14091            |31783                 |106195               |Miss        |Y                    |1952        |GREENLAND      |vDVbSOCI          |lawyer.com   |customer.dat|2026-11-18 14:19:39.239737|
+|9            |AAAAAAAAAAAAAAAJ|555297            |5958              |30815            |43531                 |50147                |Mr.         |Y                    |1976        |GEORGIA        |vgudeV            |mail.com     |customer.dat|2026-11-18 14:19:39.239737|
+|11           |AAAAAAAAAAAAAAAL|1438986           |1495              |761              |91923                 |70592                |Sir         |N                    |1963        |NIGER          |bmZgmTmXHY        |ip6.li       |customer.dat|2026-11-18 14:19:39.239737|
++-------------+----------------+------------------+------------------+-----------------+----------------------+---------------------+------------+---------------------+------------+---------------+------------------+-------------+------------+--------------------------+
+only showing top 3 rows
+
+== silver/customer_address : 49500 lignes, 11 colonnes, 2 fichier(s) Parquet, 979719 octets
+root
+ |-- ca_address_sk: long (nullable = true)
+ |-- ca_address_id: string (nullable = true)
+ |-- ca_city: string (nullable = true)
+ |-- ca_county: string (nullable = true)
+ |-- ca_state: string (nullable = true)
+ |-- ca_zip: string (nullable = true)
+ |-- ca_country: string (nullable = true)
+ |-- ca_gmt_offset: decimal(5,2) (nullable = true)
+ |-- ca_location_type: string (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+
++-------------+----------------+-----------+-----------------+--------+------+-------------+-------------+----------------+--------------------+--------------------------+
+|ca_address_sk|ca_address_id   |ca_city    |ca_county        |ca_state|ca_zip|ca_country   |ca_gmt_offset|ca_location_type|_source             |_traite_le                |
++-------------+----------------+-----------+-----------------+--------+------+-------------+-------------+----------------+--------------------+--------------------------+
+|0            |AAAAAAAAAAAAAAAA|Genoa      |Tuscarawas County|OH      |64453 |United States|-5.00        |single family   |customer_address.dat|2026-11-18 14:19:48.143453|
+|1            |AAAAAAAAAAAAAAAB|Chapel Hill|Hodgeman County  |KS      |17270 |United States|-6.00        |single family   |customer_address.dat|2026-11-18 14:19:48.143453|
+|3            |AAAAAAAAAAAAAAAD|Enterprise |Greeley County   |NE      |72163 |United States|-6.00        |single family   |customer_address.dat|2026-11-18 14:19:48.143453|
++-------------+----------------+-----------+-----------------+--------+------+-------------+-------------+----------------+--------------------+--------------------------+
+only showing top 3 rows
+
+== silver/date_dim : 109573 lignes, 30 colonnes, 5 fichier(s) Parquet, 4554031 octets
+root
+ |-- d_date_sk: long (nullable = true)
+ |-- d_date_id: string (nullable = true)
+ |-- d_date: date (nullable = true)
+ |-- d_month_seq: integer (nullable = true)
+ |-- d_week_seq: integer (nullable = true)
+ |-- d_quarter_seq: integer (nullable = true)
+ |-- d_year: integer (nullable = true)
+ |-- d_dow: integer (nullable = true)
+ |-- d_moy: integer (nullable = true)
+ |-- d_dom: integer (nullable = true)
+ |-- d_qoy: integer (nullable = true)
+ |-- d_fy_year: integer (nullable = true)
+ |-- d_fy_quarter_seq: integer (nullable = true)
+ |-- d_fy_week_seq: integer (nullable = true)
+ |-- d_day_name: string (nullable = true)
+ |-- d_quarter_name: string (nullable = true)
+ |-- d_holiday: string (nullable = true)
+ |-- d_weekend: string (nullable = true)
+ |-- d_following_holiday: string (nullable = true)
+ |-- d_first_dom: integer (nullable = true)
+ |-- d_last_dom: integer (nullable = true)
+ |-- d_same_day_ly: integer (nullable = true)
+ |-- d_same_day_lq: integer (nullable = true)
+ |-- d_current_day: string (nullable = true)
+ |-- d_current_week: string (nullable = true)
+ |-- d_current_month: string (nullable = true)
+ |-- d_current_quarter: string (nullable = true)
+ |-- d_current_year: string (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+
++---------+----------------+----------+-----------+----------+-------------+------+-----+-----+-----+-----+---------+----------------+-------------+----------+--------------+---------+---------+-------------------+-----------+----------+-------------+-------------+-------------+--------------+---------------+-----------------+--------------+------------+--------------------------+
+|d_date_sk|d_date_id       |d_date    |d_month_seq|d_week_seq|d_quarter_seq|d_year|d_dow|d_moy|d_dom|d_qoy|d_fy_year|d_fy_quarter_seq|d_fy_week_seq|d_day_name|d_quarter_name|d_holiday|d_weekend|d_following_holiday|d_first_dom|d_last_dom|d_same_day_ly|d_same_day_lq|d_current_day|d_current_week|d_current_month|d_current_quarter|d_current_year|_source     |_traite_le                |
++---------+----------------+----------+-----------+----------+-------------+------+-----+-----+-----+-----+---------+----------------+-------------+----------+--------------+---------+---------+-------------------+-----------+----------+-------------+-------------+-------------+--------------+---------------+-----------------+--------------+------------+--------------------------+
+|3        |AAAAAAAAAAAAAAAD|1900-01-04|0          |0         |0            |1900  |4    |1    |4    |1    |1900     |0               |0            |Thursday  |1900Q1        |Y        |N        |Y                  |2417967    |2415922   |2478062      |2434335      |N            |N             |N              |N                |N             |date_dim.dat|2026-11-18 14:19:58.398207|
+|7        |AAAAAAAAAAAAAAAH|1900-01-08|0          |1         |0            |1900  |1    |1    |8    |1    |1900     |0               |1            |Monday    |1900Q1        |Y        |N        |N                  |2431420    |2457904   |2435637      |2440176      |N            |N             |N              |N                |N             |date_dim.dat|2026-11-18 14:19:58.398207|
+|14       |AAAAAAAAAAAAAAAO|1900-01-15|0          |2         |0            |1900  |1    |1    |15   |1    |1900     |0               |2            |Monday    |1900Q1        |Y        |N        |Y                  |2469391    |2476164   |2485600      |2468170      |N            |N             |N              |N                |N             |date_dim.dat|2026-11-18 14:19:58.398207|
++---------+----------------+----------+-----------+----------+-------------+------+-----+-----+-----+-----+---------+----------------+-------------+----------+--------------+---------+---------+-------------------+-----------+----------+-------------+-------------+-------------+--------------+---------------+-----------------+--------------+------------+--------------------------+
+only showing top 3 rows
+
+== silver/household_demographics : 7200 lignes, 8 colonnes, 1 fichier(s) Parquet, 47214 octets
+root
+ |-- hd_demo_sk: long (nullable = true)
+ |-- hd_income_band_sk: long (nullable = true)
+ |-- hd_buy_potential: string (nullable = true)
+ |-- hd_dep_count: integer (nullable = true)
+ |-- hd_vehicle_count: integer (nullable = true)
+ |-- vehicle_count_invalide: boolean (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+
++----------+-----------------+----------------+------------+----------------+----------------------+--------------------------+--------------------------+
+|hd_demo_sk|hd_income_band_sk|hd_buy_potential|hd_dep_count|hd_vehicle_count|vehicle_count_invalide|_source                   |_traite_le                |
++----------+-----------------+----------------+------------+----------------+----------------------+--------------------------+--------------------------+
+|0         |3                |1001-5000       |0           |0               |false                 |household_demographics.dat|2026-11-18 14:19:51.477872|
+|1         |12               |5001-10000      |1           |2               |false                 |household_demographics.dat|2026-11-18 14:19:51.477872|
+|2         |9                |0-500           |2           |3               |false                 |household_demographics.dat|2026-11-18 14:19:51.477872|
++----------+-----------------+----------------+------------+----------------+----------------------+--------------------------+--------------------------+
+only showing top 3 rows
+
+== silver/income_band : 20 lignes, 6 colonnes, 1 fichier(s) Parquet, 2379 octets
+root
+ |-- ib_income_band_sk: long (nullable = true)
+ |-- ib_lower_bound: integer (nullable = true)
+ |-- ib_upper_bound: integer (nullable = true)
+ |-- tranche: string (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+
++-----------------+--------------+--------------+-----------+---------------+--------------------------+
+|ib_income_band_sk|ib_lower_bound|ib_upper_bound|tranche    |_source        |_traite_le                |
++-----------------+--------------+--------------+-----------+---------------+--------------------------+
+|0                |1             |10000         |1-10000    |income_band.dat|2026-11-18 14:19:53.592263|
+|1                |10001         |20000         |10001-20000|income_band.dat|2026-11-18 14:19:53.592263|
+|2                |20001         |30000         |20001-30000|income_band.dat|2026-11-18 14:19:53.592263|
++-----------------+--------------+--------------+-----------+---------------+--------------------------+
+only showing top 3 rows
+
+== silver/inventory : 21791808 lignes, 7 colonnes, 4 fichier(s) Parquet, 115307214 octets
+root
+ |-- inv_date_sk: long (nullable = true)
+ |-- inv_item_sk: long (nullable = true)
+ |-- inv_warehouse_sk: long (nullable = true)
+ |-- inv_quantity_on_hand: integer (nullable = true)
+ |-- date_complete: boolean (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+
++-----------+-----------+----------------+--------------------+-------------+-------------+--------------------------+
+|inv_date_sk|inv_item_sk|inv_warehouse_sk|inv_quantity_on_hand|date_complete|_source      |_traite_le                |
++-----------+-----------+----------------+--------------------+-------------+-------------+--------------------------+
+|37317      |15349      |0               |798                 |true         |inventory.dat|2026-11-18 14:20:50.122692|
+|37317      |15350      |0               |53                  |true         |inventory.dat|2026-11-18 14:20:50.122692|
+|37317      |15351      |0               |798                 |true         |inventory.dat|2026-11-18 14:20:50.122692|
++-----------+-----------+----------------+--------------------+-------------+-------------+--------------------------+
+only showing top 3 rows
+
+########## GOLD ##########
+
+== gold/clients_par_etat : 52 lignes, 3 colonnes, 1 fichier(s) Parquet, 1740 octets
+root
+ |-- etat: string (nullable = true)
+ |-- nb_clients: long (nullable = true)
+ |-- part_pct: double (nullable = true)
+
++----+----------+--------+
+|etat|nb_clients|part_pct|
++----+----------+--------+
+|TX  |8189      |8.27    |
+|GA  |5081      |5.13    |
+|VA  |4394      |4.44    |
++----+----------+--------+
+only showing top 3 rows
+
+== gold/clients_par_tranche_revenu : 21 lignes, 4 colonnes, 1 fichier(s) Parquet, 1837 octets
+root
+ |-- hd_income_band_sk: long (nullable = true)
+ |-- tranche: string (nullable = true)
+ |-- nb_clients: long (nullable = true)
+ |-- part_pct: double (nullable = true)
+
++-----------------+-------------+----------+--------+
+|hd_income_band_sk|tranche      |nb_clients|part_pct|
++-----------------+-------------+----------+--------+
+|NULL             |Non renseigne|60        |0.06    |
+|0                |1-10000      |4891      |4.94    |
+|1                |10001-20000  |5047      |5.1     |
++-----------------+-------------+----------+--------+
+only showing top 3 rows
+
+== gold/stock_moyen_entrepot_mois : 280 lignes, 7 colonnes, 1 fichier(s) Parquet, 3994 octets
+root
+ |-- inv_warehouse_sk: long (nullable = true)
+ |-- d_year: integer (nullable = true)
+ |-- d_moy: integer (nullable = true)
+ |-- stock_moyen: double (nullable = true)
+ |-- nb_dates: long (nullable = true)
+ |-- nb_lignes: long (nullable = true)
+ |-- nb_quantites_nulles: long (nullable = true)
+
++----------------+------+-----+-----------+--------+---------+-------------------+
+|inv_warehouse_sk|d_year|d_moy|stock_moyen|nb_dates|nb_lignes|nb_quantites_nulles|
++----------------+------+-----+-----------+--------+---------+-------------------+
+|0               |2001  |1    |500.7      |5       |90000    |25                 |
+|0               |2001  |2    |500.52     |4       |72000    |18                 |
+|0               |2001  |3    |501.06     |4       |72000    |19                 |
++----------------+------+-----+-----------+--------+---------+-------------------+
+only showing top 3 rows
+
+########## REJETS (lignes mises a l'ecart) ##########
++-----------+-----------+----------------+--------------------+--------------------------------------------------------+-------------+
+|inv_date_sk|inv_item_sk|inv_warehouse_sk|inv_quantity_on_hand|motif                                                   |_source      |
++-----------+-----------+----------------+--------------------+--------------------------------------------------------+-------------+
+|38584      |1180       |NULL            |NULL                |ligne incomplete (cle absente) : fin de fichier tronquee|inventory.dat|
++-----------+-----------+----------------+--------------------+--------------------------------------------------------+-------------+
+

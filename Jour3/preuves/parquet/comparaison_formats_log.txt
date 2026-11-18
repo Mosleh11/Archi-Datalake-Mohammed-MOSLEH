@@ -1,0 +1,43 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+csv (sans inferSchema) 20392254 octets, 99000 lignes, 25 colonnes string sur 25 , 0.87 s
+csv (inferSchema) 20392254 octets, 99000 lignes, 13 colonnes string sur 25 , 0.87 s
+json 64352211 octets, 99000 lignes, 15 colonnes string sur 25 , 1.02 s
+parquet 5046546 octets, 99000 lignes, 14 colonnes string sur 25 , 0.3 s
+Parquet relu : 99000 lignes (source 99000 ) ; meme schema : True ; lignes differentes : 0
+root
+ |-- c_customer_sk: long (nullable = true)
+ |-- c_customer_id: string (nullable = true)
+ |-- c_current_cdemo_sk: long (nullable = true)
+ |-- c_current_hdemo_sk: long (nullable = true)
+ |-- c_current_addr_sk: long (nullable = true)
+ |-- c_first_shipto_date_sk: long (nullable = true)
+ |-- c_first_sales_date_sk: long (nullable = true)
+ |-- c_salutation: string (nullable = true)
+ |-- c_preferred_cust_flag: string (nullable = true)
+ |-- c_birth_year: integer (nullable = true)
+ |-- c_birth_country: string (nullable = true)
+ |-- c_last_review_date: string (nullable = true)
+ |-- email_domaine: string (nullable = true)
+ |-- _source: string (nullable = true)
+ |-- _traite_le: timestamp (nullable = true)
+ |-- ca_city: string (nullable = true)
+ |-- ca_county: string (nullable = true)
+ |-- ca_state: string (nullable = true)
+ |-- ca_zip: string (nullable = true)
+ |-- ca_country: string (nullable = true)
+ |-- hd_income_band_sk: long (nullable = true)
+ |-- hd_buy_potential: string (nullable = true)
+ |-- hd_dep_count: integer (nullable = true)
+ |-- hd_vehicle_count: integer (nullable = true)
+ |-- tranche: string (nullable = true)
+
++-------------+--------+-------------+----------------+
+|c_customer_sk|ca_state|tranche      |hd_vehicle_count|
++-------------+--------+-------------+----------------+
+|2            |NE      |30001-40000  |2               |
+|9            |IA      |100001-110000|3               |
+|11           |NE      |40001-50000  |0               |
+|12           |AR      |40001-50000  |3               |
+|22           |IN      |1-10000      |1               |
++-------------+--------+-------------+----------------+
+only showing top 5 rows

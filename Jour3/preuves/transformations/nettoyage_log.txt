@@ -1,0 +1,7 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+customer: brut=99000 silver=99000 rejets=0 {'echecs_conversion': {}, 'doublons_supprimes': 0, 'flag_preferred_invalide': 0, 'annee_naissance_hors_plage': 0}
+customer_address: brut=49500 silver=49500 rejets=0 {'echecs_conversion': {}, 'doublons_supprimes': 0, 'etat_invalide': 0, 'zip_invalide': 0}
+household_demographics: brut=7200 silver=7200 rejets=0 {'echecs_conversion': {}, 'vehicle_count_negatif_mis_a_null': 282}
+income_band: brut=20 silver=20 rejets=0 {'echecs_conversion': {}, 'bornes_inversees': 0}
+date_dim: brut=109573 silver=109573 rejets=0 {'echecs_conversion': {}, 'date_non_convertible': 0, 'annee_incoherente': 0}
+inventory: brut=21791809 silver=21791808 rejets=1 {'echecs_conversion': {}, 'quantite_nulle_conservee': 5616, 'quantite_negative': 0, 'lignes_attendues_par_date': 90000, 'dates_incompletes': 1}

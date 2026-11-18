@@ -1,0 +1,34 @@
+[
+ {
+  "gauche": "c_current_addr_sk",
+  "droite": "customer_address.ca_address_sk",
+  "lignes_avant": 99000,
+  "lignes_apres": 99000,
+  "cle_gauche_nulle": 22,
+  "orphelins": 0
+ },
+ {
+  "gauche": "c_current_hdemo_sk",
+  "droite": "household_demographics.hd_demo_sk",
+  "lignes_avant": 99000,
+  "lignes_apres": 99000,
+  "cle_gauche_nulle": 29,
+  "orphelins": 0
+ },
+ {
+  "gauche": "hd_income_band_sk",
+  "droite": "income_band.ib_income_band_sk",
+  "lignes_avant": 99000,
+  "lignes_apres": 99000,
+  "cle_gauche_nulle": 60,
+  "orphelins": 0
+ },
+ {
+  "gauche": "inventory.inv_date_sk",
+  "droite": "date_dim.d_date_sk",
+  "lignes_avant": 21791808,
+  "lignes_apres": 21791808,
+  "cle_gauche_nulle": 0,
+  "orphelins": 0
+ }
+]

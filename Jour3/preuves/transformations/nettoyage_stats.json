@@ -1,0 +1,52 @@
+{
+ "customer": {
+  "lignes_brutes": 99000,
+  "lignes_silver": 99000,
+  "lignes_rejetees": 0,
+  "echecs_conversion": {},
+  "doublons_supprimes": 0,
+  "flag_preferred_invalide": 0,
+  "annee_naissance_hors_plage": 0
+ },
+ "customer_address": {
+  "lignes_brutes": 49500,
+  "lignes_silver": 49500,
+  "lignes_rejetees": 0,
+  "echecs_conversion": {},
+  "doublons_supprimes": 0,
+  "etat_invalide": 0,
+  "zip_invalide": 0
+ },
+ "household_demographics": {
+  "lignes_brutes": 7200,
+  "lignes_silver": 7200,
+  "lignes_rejetees": 0,
+  "echecs_conversion": {},
+  "vehicle_count_negatif_mis_a_null": 282
+ },
+ "income_band": {
+  "lignes_brutes": 20,
+  "lignes_silver": 20,
+  "lignes_rejetees": 0,
+  "echecs_conversion": {},
+  "bornes_inversees": 0
+ },
+ "date_dim": {
+  "lignes_brutes": 109573,
+  "lignes_silver": 109573,
+  "lignes_rejetees": 0,
+  "echecs_conversion": {},
+  "date_non_convertible": 0,
+  "annee_incoherente": 0
+ },
+ "inventory": {
+  "lignes_brutes": 21791809,
+  "lignes_silver": 21791808,
+  "lignes_rejetees": 1,
+  "echecs_conversion": {},
+  "quantite_nulle_conservee": 5616,
+  "quantite_negative": 0,
+  "lignes_attendues_par_date": 90000,
+  "dates_incompletes": 1
+ }
+}
