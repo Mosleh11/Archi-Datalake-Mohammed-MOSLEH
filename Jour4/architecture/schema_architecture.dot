@@ -1,0 +1,16 @@
+digraph G { rankdir=LR; fontname=Arial; node [shape=box, fontname=Arial, fontsize=11, style="filled,dashed", fillcolor="#fde9d9"]; edge [color="#555555", fontname=Arial, fontsize=9];
+subgraph cluster_src { label="Sources"; style=rounded; fontsize=11;
+  tpcxbb [label="TPCx-BB\n(7 tables reçues)", style=filled, fillcolor="#d9ead3"];
+  compl [label="Données complémentaires\n(aucune utilisée)", fillcolor="#f2f2f2"]; }
+subgraph cluster_ing { label="Ingestion (étudiée)"; style=rounded; fontsize=11; adf [label="Azure Data Factory\npipeline de copie"]; }
+subgraph cluster_adls { label="Compte de stockage ADLS Gen2 (HNS activé) – conteneur retail-intelligence"; style=rounded; fontsize=11;
+  bronze [label="bronze/tpcxbb/"]; silver [label="silver/"]; gold [label="gold/indicateurs\ngold/analyses"]; quality [label="quality/"]; doc [label="documentation/"]; }
+subgraph cluster_calc { label="Traitement et analyse (étudiés)"; style=rounded; fontsize=11; spark [label="Synapse Spark\n(PySpark du Jour 3)"]; sql [label="Synapse SQL\n(requêtes sur Gold)"]; }
+pbi [label="Power BI / exports CSV"];
+subgraph cluster_sec { label="Sécurité (étudiée)"; style=rounded; fontsize=11; entra [label="Microsoft Entra ID\nutilisateurs, groupes, identités managées"]; rbac [label="RBAC (compte / conteneur)\n+ ACL (dossiers)"]; kv [label="Key Vault\n(secrets)"]; }
+tpcxbb -> adf [label="fichiers .dat"]; compl -> adf [style=dotted];
+adf -> bronze [label="copie"]; bronze -> spark; spark -> silver; silver -> spark [style=dashed]; spark -> gold; spark -> quality [label="rapports"];
+gold -> sql; gold -> pbi; sql -> pbi;
+entra -> rbac -> bronze [style=dotted]; rbac -> silver [style=dotted]; rbac -> gold [style=dotted]; kv -> adf [style=dotted]; kv -> spark [style=dotted];
+legende [shape=plaintext, style=filled, fillcolor=white, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="#d9ead3">réellement utilisé (données du kit)</td></tr><tr><td bgcolor="#fde9d9">étudié / proposé, NON déployé (pointillés)</td></tr><tr><td bgcolor="#f2f2f2">absent</td></tr></table>>];
+}

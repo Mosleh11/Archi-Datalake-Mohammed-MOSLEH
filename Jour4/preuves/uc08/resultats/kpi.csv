@@ -1,0 +1,11 @@
+kpi,nom,valeur,unite,perimetre
+KPI-09,Nombre de clients,99000,clients,"global, clients_enrichis (Silver)"
+KPI-09,Clients sans adresse,22,clients,ca_state vide
+KPI-10,Tranche de revenu la plus peuplée : 130001-140000,5447,clients,"20 tranches, hors non renseigné"
+KPI-10,Tranche de revenu la moins peuplée : 90001-100000,4660,clients,"20 tranches, hors non renseigné"
+KPI-08,Stock moyen (tous entrepôts),500.16,unités,"inventory Silver, dates complètes"
+KPI-08,Stock moyen entrepôt 0,500.31,unités,"inventory Silver, dates complètes"
+KPI-08,Stock moyen entrepôt 1,500.21,unités,"inventory Silver, dates complètes"
+KPI-08,Stock moyen entrepôt 2,500.08,unités,"inventory Silver, dates complètes"
+KPI-08,Stock moyen entrepôt 3,499.92,unités,"inventory Silver, dates complètes"
+KPI-08,Stock moyen entrepôt 4,500.3,unités,"inventory Silver, dates complètes"

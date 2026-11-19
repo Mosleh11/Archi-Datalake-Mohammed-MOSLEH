@@ -1,0 +1,5 @@
+jeu,colonne,valeurs,manquantes,min,max,moyenne,mediane,ecart_type
+clients_enrichis,c_birth_year,98970,30,1924,1992,1958.05,1958,19.92
+clients_enrichis,hd_dep_count,98937,63,0,9,2.43,1,2.41
+clients_enrichis,hd_vehicle_count,94997,4003,0,4,1.82,2,1.13
+inventory (dates complètes),inv_quantity_on_hand,21774389,5611,0,1000,500.16,500,288.97

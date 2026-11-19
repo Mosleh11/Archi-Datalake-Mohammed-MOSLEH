@@ -1,0 +1,12 @@
+digraph G { rankdir=LR; fontname=Arial; node [shape=box, fontname=Arial, fontsize=11, style=filled, fillcolor="#d9ead3"]; edge [color="#555555", fontname=Arial, fontsize=9];
+subgraph cluster_src { label="Sources"; style=rounded; fontsize=11; tpcxbb [label="TPCx-BB\n7 tables .dat"]; }
+subgraph cluster_ing { label="Ingestion"; style=rounded; fontsize=11; nifi [label="Apache NiFi\n(exécuté au Jour 2)"]; airflow [label="Airflow ou scripts planifiés\n(étudié)", style="filled,dashed", fillcolor="#fde9d9"]; }
+subgraph cluster_st { label="Stockage : disque local et HDFS"; style=rounded; fontsize=11;
+  bronze [label="bronze\n(.dat locaux, Jour 3)"]; hdfs [label="HDFS /raw\n(Jour 2, 2 fichiers)"]; silver [label="silver\n(Parquet)"]; gold [label="gold\n(Parquet)"];
+  minio [label="MinIO (S3)\n(étudié)", style="filled,dashed", fillcolor="#fde9d9"]; iceberg [label="Apache Iceberg\n(étudié)", style="filled,dashed", fillcolor="#fde9d9"]; }
+subgraph cluster_calc { label="Traitement et requêtes"; style=rounded; fontsize=11; spark [label="Spark / PySpark 4.3.0\nlocal[4] dans Docker"]; trino [label="Trino\n(étudié)", style="filled,dashed", fillcolor="#fde9d9"]; sparksql [label="Spark SQL\n(disponible, non utilisé)", fillcolor="#f2f2f2"]; }
+subgraph cluster_vis { label="Restitution"; style=rounded; fontsize=11; jup [label="Jupyter + Matplotlib\n(Jour 4, UC-08)"]; superset [label="Superset\n(étudié)", style="filled,dashed", fillcolor="#fde9d9"]; }
+tpcxbb -> nifi; nifi -> hdfs; tpcxbb -> bronze [label="copie locale"]; airflow -> spark [style=dotted]; bronze -> spark; spark -> silver; spark -> gold; gold -> jup; silver -> jup;
+gold -> trino [style=dotted]; trino -> superset [style=dotted]; iceberg -> gold [style=dotted, label="format de table"]; minio -> iceberg [style=dotted];
+legende [shape=plaintext, style=filled, fillcolor=white, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="#d9ead3">réellement exécuté (Jours 2 à 4)</td></tr><tr><td bgcolor="#fde9d9">étudié, non déployé (pointillés)</td></tr><tr><td bgcolor="#f2f2f2">disponible, non utilisé</td></tr></table>>];
+}

@@ -1,0 +1,443 @@
+[
+ {
+  "famille": "Completude",
+  "cible": "customer",
+  "regle": "c_customer_sk non nul",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Completude",
+  "cible": "customer_address",
+  "regle": "ca_address_sk non nul",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Completude",
+  "cible": "household_demographics",
+  "regle": "hd_demo_sk non nul",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Completude",
+  "cible": "income_band",
+  "regle": "ib_income_band_sk non nul",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Completude",
+  "cible": "date_dim",
+  "regle": "d_date_sk non nul",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Completude",
+  "cible": "inventory",
+  "regle": "inv_date_sk, inv_item_sk, inv_warehouse_sk non nuls",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Completude",
+  "cible": "inventory",
+  "regle": "inv_quantity_on_hand renseigne (seuil 1 % de nulls)",
+  "mesure": 5616,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": "5616 nulls = 0.026 % ; lignes conservees, valeur non remplacee"
+ },
+ {
+  "famille": "Completude",
+  "cible": "customer",
+  "regle": "c_current_addr_sk renseigne (seuil 1 % de nulls)",
+  "mesure": 22,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": "22 nulls = 0.022 %"
+ },
+ {
+  "famille": "Completude",
+  "cible": "customer",
+  "regle": "c_current_hdemo_sk renseigne (seuil 1 % de nulls)",
+  "mesure": 29,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": "29 nulls = 0.029 %"
+ },
+ {
+  "famille": "Completude",
+  "cible": "customer",
+  "regle": "c_birth_year renseigne (seuil 1 % de nulls)",
+  "mesure": 30,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": "30 nulls = 0.030 %"
+ },
+ {
+  "famille": "Unicite",
+  "cible": "customer",
+  "regle": "c_customer_sk unique",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Unicite",
+  "cible": "customer_address",
+  "regle": "ca_address_sk unique",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Unicite",
+  "cible": "household_demographics",
+  "regle": "hd_demo_sk unique",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Unicite",
+  "cible": "income_band",
+  "regle": "ib_income_band_sk unique",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Unicite",
+  "cible": "date_dim",
+  "regle": "d_date_sk unique",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Unicite",
+  "cible": "inventory",
+  "regle": "(date, item, entrepot) unique",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "customer",
+  "regle": "valeurs non convertibles vers le type de la spec",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "customer_address",
+  "regle": "valeurs non convertibles vers le type de la spec",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "household_demographics",
+  "regle": "valeurs non convertibles vers le type de la spec",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "income_band",
+  "regle": "valeurs non convertibles vers le type de la spec",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "date_dim",
+  "regle": "valeurs non convertibles vers le type de la spec",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "inventory",
+  "regle": "valeurs non convertibles vers le type de la spec",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "customer_address",
+  "regle": "ca_state = 2 lettres majuscules (ou null)",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Validite",
+  "cible": "customer_address",
+  "regle": "ca_zip = 5 chiffres (ou null)",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Coherence",
+  "cible": "household_demographics",
+  "regle": "hd_vehicle_count >= 0",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": "282 valeurs -1 corrigees en null au nettoyage"
+ },
+ {
+  "famille": "Coherence",
+  "cible": "customer",
+  "regle": "c_birth_year entre 1900 et 2025",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Coherence",
+  "cible": "date_dim",
+  "regle": "d_year = annee de d_date",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Coherence",
+  "cible": "income_band",
+  "regle": "borne basse <= borne haute",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Coherence",
+  "cible": "inventory",
+  "regle": "quantite entre 0 et 1000",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Coherence",
+  "cible": "inventory",
+  "regle": "toutes les dates d'inventaire sont completes",
+  "mesure": 1,
+  "attendu": 0,
+  "statut": "ANOMALIE",
+  "remarque": "11808 lignes sur 90 000 pour la derniere date (fichier tronque) ; exclue du Gold"
+ },
+ {
+  "famille": "Volume",
+  "cible": "customer",
+  "regle": "lignes brutes = lignes Silver + lignes rejetees",
+  "mesure": 99000,
+  "attendu": 99000,
+  "statut": "OK",
+  "remarque": "99000 brutes, 99000 Silver, 0 rejetee(s)"
+ },
+ {
+  "famille": "Volume",
+  "cible": "customer_address",
+  "regle": "lignes brutes = lignes Silver + lignes rejetees",
+  "mesure": 49500,
+  "attendu": 49500,
+  "statut": "OK",
+  "remarque": "49500 brutes, 49500 Silver, 0 rejetee(s)"
+ },
+ {
+  "famille": "Volume",
+  "cible": "household_demographics",
+  "regle": "lignes brutes = lignes Silver + lignes rejetees",
+  "mesure": 7200,
+  "attendu": 7200,
+  "statut": "OK",
+  "remarque": "7200 brutes, 7200 Silver, 0 rejetee(s)"
+ },
+ {
+  "famille": "Volume",
+  "cible": "income_band",
+  "regle": "lignes brutes = lignes Silver + lignes rejetees",
+  "mesure": 20,
+  "attendu": 20,
+  "statut": "OK",
+  "remarque": "20 brutes, 20 Silver, 0 rejetee(s)"
+ },
+ {
+  "famille": "Volume",
+  "cible": "date_dim",
+  "regle": "lignes brutes = lignes Silver + lignes rejetees",
+  "mesure": 109573,
+  "attendu": 109573,
+  "statut": "OK",
+  "remarque": "109573 brutes, 109573 Silver, 0 rejetee(s)"
+ },
+ {
+  "famille": "Volume",
+  "cible": "inventory",
+  "regle": "lignes brutes = lignes Silver + lignes rejetees",
+  "mesure": 21791809,
+  "attendu": 21791809,
+  "statut": "OK",
+  "remarque": "21791809 brutes, 21791808 Silver, 1 rejetee(s)"
+ },
+ {
+  "famille": "Integrite",
+  "cible": "customer -> customer_address",
+  "regle": "c_current_addr_sk existe",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Integrite",
+  "cible": "customer -> household_demographics",
+  "regle": "c_current_hdemo_sk existe",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Integrite",
+  "cible": "household_demographics -> income_band",
+  "regle": "hd_income_band_sk existe",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Integrite",
+  "cible": "customer -> date_dim",
+  "regle": "c_first_sales_date_sk existe",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Integrite",
+  "cible": "customer -> date_dim",
+  "regle": "c_first_shipto_date_sk existe",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Integrite",
+  "cible": "inventory -> date_dim",
+  "regle": "inv_date_sk existe",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Integrite",
+  "cible": "inventory -> item / warehouse",
+  "regle": "inv_item_sk et inv_warehouse_sk existent",
+  "mesure": null,
+  "attendu": 0,
+  "statut": "NON VERIFIABLE",
+  "remarque": "tables item et warehouse absentes du zip"
+ },
+ {
+  "famille": "Integrite",
+  "cible": "customer -> customer_demographics",
+  "regle": "c_current_cdemo_sk existe",
+  "mesure": null,
+  "attendu": 0,
+  "statut": "NON VERIFIABLE",
+  "remarque": "table non traitee au Jour 3 (verifie au Jour 1 : 0 orphelin)"
+ },
+ {
+  "famille": "Gold",
+  "cible": "clients_enrichis",
+  "regle": "une ligne par client (pas de duplication par les jointures)",
+  "mesure": 99000,
+  "attendu": 99000,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Gold",
+  "cible": "clients_par_etat",
+  "regle": "somme des clients = total Silver",
+  "mesure": 99000,
+  "attendu": 99000,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Gold",
+  "cible": "clients_par_tranche_revenu",
+  "regle": "somme des clients = total Silver",
+  "mesure": 99000,
+  "attendu": 99000,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Gold",
+  "cible": "stock_moyen_entrepot_mois",
+  "regle": "stock moyen dans [0, 1000]",
+  "mesure": 0,
+  "attendu": 0,
+  "statut": "OK",
+  "remarque": ""
+ },
+ {
+  "famille": "Gold",
+  "cible": "stock_moyen_entrepot_mois",
+  "regle": "lignes d'inventaire du Gold = lignes des dates completes",
+  "mesure": 21780000,
+  "attendu": 21780000,
+  "statut": "OK",
+  "remarque": ""
+ }
+]

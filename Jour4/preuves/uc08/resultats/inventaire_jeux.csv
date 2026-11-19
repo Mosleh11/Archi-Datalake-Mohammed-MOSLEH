@@ -1,0 +1,7 @@
+jeu,zone,format,granularite,lignes,colonnes
+clients_enrichis,silver,Parquet,un client,99000,25
+inventory,silver,Parquet,"une date, un article, un entrepôt",21791808,7
+date_dim,silver,Parquet,un jour,109573,30
+clients_par_etat,gold,Parquet,un état,52,3
+clients_par_tranche_revenu,gold,Parquet,une tranche de revenu,21,4
+stock_moyen_entrepot_mois,gold,Parquet,un entrepôt et un mois,280,7

@@ -1,0 +1,27 @@
+retail-intelligence/
+retail-intelligence/bronze/
+retail-intelligence/bronze/tpcxbb/
+retail-intelligence/bronze/tpcxbb/customer/
+retail-intelligence/bronze/tpcxbb/customer/ingest_date=2026-11-19/
+    customer_echantillon_200.dat  (26305 octets)
+retail-intelligence/documentation/
+    dictionnaire_KPI.xlsx  (7530 octets)
+retail-intelligence/gold/
+retail-intelligence/gold/analyses/
+    kpi.csv  (874 octets)
+    statistiques.csv  (339 octets)
+retail-intelligence/gold/indicateurs/
+retail-intelligence/gold/indicateurs/clients_par_etat/
+    part-00000-0c6c0f43-ad0e-46f0-968e-59658328e9e6-c000.snappy.parquet  (1740 octets)
+retail-intelligence/gold/indicateurs/clients_par_tranche_revenu/
+    part-00000-003ca588-f283-4b86-af5f-390bcc4ef023-c000.snappy.parquet  (1837 octets)
+retail-intelligence/gold/indicateurs/stock_moyen_entrepot_mois/
+    part-00000-40360a42-1493-46cd-9fdc-82b84cb9a204-c000.snappy.parquet  (3994 octets)
+retail-intelligence/quality/
+retail-intelligence/quality/uc06/
+    controles_qualite.json  (9435 octets)
+retail-intelligence/silver/
+retail-intelligence/silver/household_demographics/
+    part-00000-61ac992b-4bde-40af-9613-56bfa756bbfd-c000.snappy.parquet  (47214 octets)
+retail-intelligence/silver/income_band/
+    part-00000-9224f886-03e9-454c-8adf-b0df358dce00-c000.snappy.parquet  (2379 octets)

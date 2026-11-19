@@ -1,0 +1,52 @@
+[
+ {
+  "chemin": "retail-intelligence/bronze/tpcxbb/customer/ingest_date=2026-11-19/customer_echantillon_200.dat",
+  "octets": 26305,
+  "sha256": "9365ac91bddee6c4b5356f2d42beb5e6a80c90b97f889e78179ccd65f9204ca0"
+ },
+ {
+  "chemin": "retail-intelligence/documentation/dictionnaire_KPI.xlsx",
+  "octets": 7530,
+  "sha256": "906f8b22b7fbcea2440d3c6b9c715d01b9056a8ead8e4b1b74218babeb892c98"
+ },
+ {
+  "chemin": "retail-intelligence/gold/analyses/kpi.csv",
+  "octets": 874,
+  "sha256": "b12dfe3c0f31d044a0b165afa95de7815fd1df4277f0fdce1ec3095ed664e4ec"
+ },
+ {
+  "chemin": "retail-intelligence/gold/analyses/statistiques.csv",
+  "octets": 339,
+  "sha256": "ec5bc1694a6aff3092f21484de4c41dec681c0d51b3ce7ca32a177e1cd77ad18"
+ },
+ {
+  "chemin": "retail-intelligence/gold/indicateurs/clients_par_etat/part-00000-0c6c0f43-ad0e-46f0-968e-59658328e9e6-c000.snappy.parquet",
+  "octets": 1740,
+  "sha256": "b205561b9771260f43776897b4ed4e39c97c2f1995ad3140b15caea3e0aa37be"
+ },
+ {
+  "chemin": "retail-intelligence/gold/indicateurs/clients_par_tranche_revenu/part-00000-003ca588-f283-4b86-af5f-390bcc4ef023-c000.snappy.parquet",
+  "octets": 1837,
+  "sha256": "02a036db721dea3f3fed2477bd9543907c51d69b5b79d49ac6f07149a70f3947"
+ },
+ {
+  "chemin": "retail-intelligence/gold/indicateurs/stock_moyen_entrepot_mois/part-00000-40360a42-1493-46cd-9fdc-82b84cb9a204-c000.snappy.parquet",
+  "octets": 3994,
+  "sha256": "0743ffa74b8fa40b437676d3fadfb95ef3b58e130ab374fb50bf409a1902a15b"
+ },
+ {
+  "chemin": "retail-intelligence/quality/uc06/controles_qualite.json",
+  "octets": 9435,
+  "sha256": "c618a20002ab5ea6072566eb622b2ed432b7fdc525574a790561417174cec9ee"
+ },
+ {
+  "chemin": "retail-intelligence/silver/household_demographics/part-00000-61ac992b-4bde-40af-9613-56bfa756bbfd-c000.snappy.parquet",
+  "octets": 47214,
+  "sha256": "db6afb85d612a409128e9668213e112d4aa143b5bd8d5f10c153da7c94ec847d"
+ },
+ {
+  "chemin": "retail-intelligence/silver/income_band/part-00000-9224f886-03e9-454c-8adf-b0df358dce00-c000.snappy.parquet",
+  "octets": 2379,
+  "sha256": "6bf5a87999db25453fc92860f774517552c7ac80df1dfb0419d450d982351861"
+ }
+]

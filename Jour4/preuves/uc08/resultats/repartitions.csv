@@ -1,0 +1,18 @@
+colonne,valeur,nb_clients,part_pct
+c_preferred_cust_flag,N,49512,50.01
+c_preferred_cust_flag,Y,49461,49.96
+c_preferred_cust_flag,Non renseigné,27,0.03
+hd_buy_potential,1001-5000,36171,36.54
+hd_buy_potential,5001-10000,20905,21.12
+hd_buy_potential,0-500,16865,17.04
+hd_buy_potential,501-1000,16842,17.01
+hd_buy_potential,>10000,4161,4.2
+hd_buy_potential,Unknown,4009,4.05
+hd_buy_potential,Non renseigné,47,0.05
+c_salutation,Dr.,28962,29.25
+c_salutation,Sir,17058,17.23
+c_salutation,Mr.,16776,16.95
+c_salutation,Ms.,12131,12.25
+c_salutation,Mrs.,12073,12.19
+c_salutation,Miss,11972,12.09
+c_salutation,Non renseigné,28,0.03
